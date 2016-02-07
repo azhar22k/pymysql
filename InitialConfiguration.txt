@@ -5,18 +5,17 @@ ________________________________________________________________________
  Open your mysql cli and excute following commands.
  (Change them according to your use)
  
- >>>use mysql;
- >>>CREATE TABLE student(rollno int primary key auto_increment,name varchar(20),marks int);
+ >>>use test;
+ >>>CREATE TABLE student(rollno int primary key auto_increment,name varchar(20));
  >>>DESC student;
  
  ______________________________________________________________________________
  something like this should appear
  
- +--------+-------------+------+-----+---------+----------------+
++--------+-------------+------+-----+---------+----------------+
 | Field  | Type        | Null | Key | Default | Extra          |
 +--------+-------------+------+-----+---------+----------------+
 | rollno | int(11)     | NO   | PRI | NULL    | auto_increment |
 | name   | varchar(20) | YES  |     | NULL    |                |
-| marks  | int(11)     | YES  |     | NULL    |                |
 +--------+-------------+------+-----+---------+----------------+
-3 rows in set (0.00 sec)
+2 rows in set (0.01 sec)
